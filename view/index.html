@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.4.5/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<script type="text/javascript" src="http://www.expertphp.in/js/jquery.form.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-offset-2 col-sm-8" id="nav_header_parent">
+				<div class="eachNavHeading">
+					<div class="eachNavHeading_icon"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
+					<div class="eachNavHeading_text">Dashboard</div>
+				</div>
+				<div class="eachNavHeading">
+					<div class="eachNavHeading_icon"><i class="fa fa-building-o" aria-hidden="true"></i></div>
+					<div class="eachNavHeading_text">Vibe</div>
+				</div>
+				<div class="eachNavHeading">
+					<div class="eachNavHeading_icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
+					<div class="eachNavHeading_text">Employees</div>
+				</div>
+				<div class="eachNavHeading active">
+					<div class="eachNavHeading_icon"><i class="fa fa-inr" aria-hidden="true"></i></div>
+					<div class="eachNavHeading_text">C&B/Financials</div>
+				</div>
+				<div class="eachNavHeading">
+					<div class="eachNavHeading_icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+					<div class="eachNavHeading_text">Attendance</div>
+				</div>
+				<div class="eachNavHeading">
+					<div class="eachNavHeading_icon"><i class="fa fa-id-card-o" aria-hidden="true"></i></div>
+					<div class="eachNavHeading_text">Leaves</div>
+				</div>
+				<div class="eachNavHeading">
+					<div class="eachNavHeading_icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+					<div class="eachNavHeading_text">HR Documents</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12" id="sub_menubar_header_parent">
+			<div class="col-xs-12 col-sm-offset-2 col-sm-8">
+				<div class="eachSubMenuHeading col-xs-12 col-sm-4">Compenstion</div>
+				<div class="eachSubMenuHeading col-xs-12 col-sm-4">Benefits</div>
+				<div class="eachSubMenuHeading col-xs-12 col-sm-4 active">Reimbursement</div>
+			</div>			
+		</div>
+		<div class="col-xs-12" id="formAddNew_allContent_item_parent">
+			<div class="col-xs-12" id="firstRow_formHaeder">
+				<div class="leftSection col-xs-12 col-sm-7">
+					<div class="heading">
+						<span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+						<span class="text">Mumbai trip Expenses</span>
+					</div>
+					<div class="heading_amount">
+						Total: 23,843<i class="fa fa-inr" aria-hidden="true"></i> + 3,233$ + 112<i class="fa fa-eur" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="rightSection col-xs-12 col-sm-5">
+					<button class="btn btn-primary pull-right">Apply Reimbursemeny</button>
+					<button class="btn btn-default pull-right margin-right-40">Save Draft</button>
+				</div>
+			</div>
+			<div class="col-xs-12" id="form_parent_row">
+				<div class="col-xs-12 form">
+					<div class="eachfiled col-xs-12 col-sm-2 padding-right-0">
+						<select class="form-control input-sm" id="expenses_type">
+							<option value="Hotel Expenses">Hotel Expenses</option>
+							<option value="Accumudation Expenses">Accumudation Expenses</option>
+							<option value="Trip Expenses">Trip Expenses</option>
+						</select>
+					</div>
+					<div class="eachfiled col-xs-12 col-sm-2 padding-right-0" id="expenses_date">
+						<input type="text" class="form-control input-sm" id="datetimepicker1" placeholder="22-06-2-2017">
+					</div>
+					<div class="eachfiled col-xs-12 col-sm-3 padding-right-0">
+						<div class="parentinput col-xs-12 padding-0">
+							<div class="hotel_night_selectParent" id="expenses_night">
+								<select class="form-control input-sm pull-left" id="hotel_night_select">
+									<option value="1 Night">1 Night</option>
+									<option value="2 Night">2 Night</option>
+									<option value="3 Night">3 Night</option>
+								</select>
+								<span class="select_night_x">x</span>
+							</div>
+							<div class="hotel_pernightText">
+								1200/Per night <i class="fa fa-info-circle" aria-hidden="true"></i>
+								<span class="equal_night_x">=</span>
+							</div>
+							<div class="hotel_pernightTotal_amount">
+								<span id="total_expenses_amout">1200</span>
+								<div class="hotel_pernightTotal_amount_right"></div>
+							</div>
+							<div class="hotel_rupee_type">
+								<select class="form-control input-sm pull-left" id="hotel_rupeeType_select">
+									<option value="INR">INR</option>
+									<option value="$">$</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="clearfix col-xs-12 height-15"></div> -->
+					<div class="eachfiled col-xs-12 col-sm-5">
+						<input type="text" class="form-control input-sm" placeholder="Meeting with Mithali group" id="description_0">
+					</div>
+					<div class="col-xs-12 padding-0 margin-top-15">
+						<div class="eachfiled col-xs-12 col-sm-1 padding-right-0">
+							<input type="text" class="form-control input-sm" placeholder="Service tax*" id="expenses_tax">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-1 padding-right-0">
+							<input type="text" class="form-control input-sm" placeholder="Description" id="expenses_description_1">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-1 padding-right-0">
+							<input type="text" class="form-control input-sm" placeholder="Code" id="expenses_code">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-1 padding-right-0 width-118">
+							<input type="text" class="form-control input-sm" placeholder="Domestic stay*" id="expenses_domestiv">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-1 padding-right-0 width-118">
+							<input type="text" class="form-control input-sm" placeholder="OYO Rooms" id="expenses_oyoRoom">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-2 padding-right-0 width-118">
+							<input type="text" class="form-control input-sm" placeholder="Domestic stay*" id="expenses_domestiv_2">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-1 padding-right-0 width-118">
+							<input type="text" class="form-control input-sm" placeholder="OYO Rooms" id="expenses_oyoRoom_2">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-2 padding-right-0 width-118">
+							<input type="text" class="form-control input-sm" placeholder="Domestic stay*" id="expenses_domestiv_3">
+						</div>
+						<div class="eachfiled col-xs-12 col-sm-3 padding-right-0">
+							<input type="text" class="form-control input-sm" placeholder="OYO Rooms" id="expenses_oyoRoom_3">
+						</div>
+					</div>
+					<div class="eachfiled col-xs-12 col-sm-12 margin-top-15">
+						<div class="attachementField col-xs-12 padding-0">
+							<div class="attachementField_child">
+								<i class="fa fa-link" aria-hidden="true"></i> Add Attachment
+							</div>
+							<!-- <form action="multiupload.php" method="post" enctype="multipart/form-data"> -->
+							<div class="attachementField_child col-xs-8">
+							  	<div class="col-md-12">
+							      	<input type="file" class="form-control" id="upload_file" name="images[]" multiple/>
+							      	<!-- onchange="preview_images();"  -->
+							  	</div>
+							 </div>
+							<!-- </form> -->
+						</div>
+						<div class="attachementField">
+							
+						</div>
+					</div>
+					<div class="eachfiled col-xs-12 col-sm-7 margin-top-15" id="allAttachement">
+						
+					</div>
+					<div class="eachfiled col-xs-12 col-sm-5 margin-top-15">
+						<button class="btn btn-primary pull-right" id="submit_addExpense">Add Expense</button>
+						<button class="btn btn-default pull-right margin-right-40" id="Reset_full_form">Reset</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12" id="form_data_parent_row">
+				<div class="col-xs-12 form_data">
+					<div class="col-xs-12" id="all_data_append_parent">
+						<!-- <div class="empty_all_data_default col-xs-12">
+							Data Not Found
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.4.5/jquery.datetimepicker.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+	<script type="text/javascript" src="../assets/js/index.js"></script>
+
+</body>
+</html>

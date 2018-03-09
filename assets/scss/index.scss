@@ -1,0 +1,261 @@
+body{
+	margin: 0px;
+	top: 0px;
+	padding: 0px;
+	.container-fluid{
+		padding: 0px;
+	}
+	#nav_header_parent{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		.eachNavHeading{
+			width: 14.28%;			
+			text-align: center;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			float: left;
+			color: rgba(102,102,102,0.7);
+			cursor: pointer;
+			.eachNavHeading_icon{
+				font-size: 20px;
+			}
+			.eachNavHeading_text{
+				font-size: 12px;				
+			}
+		}
+		.eachNavHeading:hover{
+			color: blue;
+		}
+		.eachNavHeading.active{
+			color: blue;
+		}
+	}
+	#sub_menubar_header_parent{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background: rgba(102,102,102,0.8);
+		.eachSubMenuHeading{
+			padding-top: 3px;
+			padding-bottom: 3px;
+			color: silver;
+			font-weight: 600;
+			font-size: 13px;
+			text-align: center;
+			line-height: 30px;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+		.eachSubMenuHeading:hover{
+			color: white;
+		}
+		.eachSubMenuHeading.active{
+			color: white;
+		}
+	}
+	#formAddNew_allContent_item_parent{
+		padding: 20px 10px;
+		background: rgba(102,102,102,0.1);
+		min-height: 600px;
+		#firstRow_formHaeder{
+			.leftSection{
+				font-size: 18px;
+				color: rgba(102,102,102,0.9);
+				font-weight: 300;
+				.heading{
+					display: inline-block;
+					border-right: 1px solid rgba(102,102,102,0.9);
+    				padding-right: 6px;
+					.icon{
+						font-size: 14px;
+						padding-right: 4px;
+					}
+					.text{
+
+					}
+				}
+				.heading_amount{
+					display: inline-block;
+				}
+			}
+			.rightSection{
+
+			}
+		}
+		#form_parent_row{
+			padding: 15px 30px;
+			.form{
+				padding: 15px 0px;
+				background: white;
+				.eachfiled{
+					input{
+						border-radius: 0px;
+					}
+					select{
+						border-radius: 0px;
+					}
+					.parentinput{
+						width: 100%;
+						min-height: 10px;
+						//border:1px solid silver;
+						.hotel_night_selectParent{
+							width: 71px;
+						    height: 30px;
+						    border-right: 1px solid silver;
+						    position: relative;
+						    float: left;
+						    .select_night_x{
+						    	position: absolute;
+							    right: -4px;
+							    background: white;
+							    padding: 0px 0px;
+							    top: 8px;
+							    height: 10px;
+							    font-size: 12px;
+							    line-height: 10px;
+						    }
+						}
+						#hotel_night_select{
+							width: 70px;
+							border-right: 0px;
+							padding: 3px;
+							float: left;
+						}
+						.hotel_pernightText{
+							border: 1px solid silver;
+						    border-left: none;
+						    width: 100px;
+						    float: left;
+						    font-size: 11px;
+						    line-height: 28px;
+						    padding-left: 8px;
+						    position: relative;
+						    .equal_night_x{
+						    	position: absolute;
+							    right: -4px;
+							    background: white;
+							    padding: 0px 0px;
+							    top: 7px;
+							    height: 14px;
+							    line-height: 14px;
+						    }
+						}
+						.hotel_pernightTotal_amount{
+							float: left;
+						    border: 1px solid silver;
+						    border-left: none;
+						    width: 50px;
+						    font-size: 12px;
+						    line-height: 28px;
+						    padding-left: 8px;
+						    border-right: 0px;
+						    position: relative;
+						    .hotel_pernightTotal_amount_right{
+								width: 1px;
+								height: 20px;
+								background: silver;
+								position: absolute;
+								right: 1px;
+								top: 5px;
+							}
+						}
+						.hotel_rupee_type{
+							float: left;
+							#hotel_rupeeType_select{
+								width: 50px;
+								border-left: 0px;
+								padding: 3px;
+							}
+						}
+					}
+					.attachementField{
+						float: left;
+						.attachementField_child{
+							float: left;
+							line-height: 30px;
+						}
+					}
+					.eachfileshow{
+						background: rgba(102,102,102,0.2);
+						border-radius: 2px;
+						position: relative;
+						margin-right: 4px;
+						padding: 3px 3px;
+						padding-right: 17px;
+						float: left;
+						.fileNameText{
+							float: left;
+						}
+						.fileNameRemove{
+							float: left;
+							position: absolute;
+							right: 3px;
+							cursor: pointer;
+						}
+						.fileNameRemove:hover{
+							color: red;
+						}
+					}
+				}
+			}
+		}
+		#form_data_parent_row{
+			padding: 15px 30px;
+			.form_data{
+				padding: 0px 0px;
+				background: white;
+				#all_data_append_parent{
+					padding-top: 15px;
+					.empty_all_data_default{
+						padding: 70px;
+						font-size: 50px;
+						text-align: center;
+						color: rgba(102,102,102,0.3);
+					}
+				}
+				.eachForm_data_parent{
+					font-size: 13px;
+					margin-bottom: 15px;
+					//background: silver;
+					padding: 15px;
+					.lable{
+						font-weight: 600;
+					}
+					.value{
+						color: rgba(102,102,102,0.9);
+						.icon{
+							color: silver;// black;
+							cursor: pointer;
+						}
+					}
+				}
+				.eachForm_data_parent:nth-child(odd){
+					background: rgba(102,102,102,0.1);
+				}
+			}
+		}
+	}
+	.margin-right-40{
+		margin-right: 40px;
+	}
+	.padding-0{
+		padding: 0px;
+	}
+	.padding-right-0{
+		padding-right: 0px;
+	}
+	.padding-left-0{
+		padding-left: 0px;
+	}
+	.padding-left-10{
+		padding-left: 10px;
+	}
+	.padding-left-15{
+		padding-left: 15px;
+	}
+	.margin-top-15{
+		margin-top: 15px;
+	}
+	.width-118{
+		width: 118px;
+	}
+}
